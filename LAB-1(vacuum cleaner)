@@ -42,3 +42,118 @@ for env in environments:
     for start_loc in ["A", "B"]:
         print(f"Scenario: Start at {start_loc}, Rooms: {env}")
         run(env.copy(), start_loc, steps=5)
+
+OUTPUT:
+Scenario: Start at A, Rooms: {'A': 'Dirty', 'B': 'Dirty'}
+Vacuum at A | Rooms: {'A': 'Dirty', 'B': 'Dirty'}
+Suck at A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Dirty'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Dirty'}
+Suck at B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Finished.
+
+Scenario: Start at B, Rooms: {'A': 'Dirty', 'B': 'Dirty'}
+Vacuum at B | Rooms: {'A': 'Dirty', 'B': 'Dirty'}
+Suck at B
+Vacuum at B | Rooms: {'A': 'Dirty', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Dirty', 'B': 'Clean'}
+Suck at A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Finished.
+
+Scenario: Start at A, Rooms: {'A': 'Clean', 'B': 'Dirty'}
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Dirty'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Dirty'}
+Suck at B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Finished.
+
+Scenario: Start at B, Rooms: {'A': 'Clean', 'B': 'Dirty'}
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Dirty'}
+Suck at B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Finished.
+
+Scenario: Start at A, Rooms: {'A': 'Dirty', 'B': 'Clean'}
+Vacuum at A | Rooms: {'A': 'Dirty', 'B': 'Clean'}
+Suck at A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Finished.
+
+Scenario: Start at B, Rooms: {'A': 'Dirty', 'B': 'Clean'}
+Vacuum at B | Rooms: {'A': 'Dirty', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Dirty', 'B': 'Clean'}
+Suck at A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Finished.
+
+Scenario: Start at A, Rooms: {'A': 'Clean', 'B': 'Clean'}
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Finished.
+
+Scenario: Start at B, Rooms: {'A': 'Clean', 'B': 'Clean'}
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Right to B
+Vacuum at B | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Move Left to A
+Vacuum at A | Rooms: {'A': 'Clean', 'B': 'Clean'}
+Finished.
+
+
