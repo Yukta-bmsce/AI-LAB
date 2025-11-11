@@ -46,3 +46,26 @@ elif not any(results):
     print("\nThe formula is a CONTRADICTION (always false).")
 else:
     print("\n  The formula is SATISFIABLE (true for some values).")
+
+OUTPUT:
+Enter propositional logic formula (use ~, &, |, =>, <=>): (p & q) => r
+
+Variables: ['p', 'q', 'r']
+
+Truth Table:
+----------------------------------
+p | q | r | Result
+----------------------------------
+F | F | F |   T
+F | F | T |   F
+F | T | F |   T
+F | T | T |   F
+T | F | F |   T
+T | F | T |   F
+T | T | F |   F
+T | T | T |   T
+----------------------------------
+
+  The formula is SATISFIABLE (true for some values).
+Colab paid products - Cancel contracts here
+
